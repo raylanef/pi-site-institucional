@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0;
+} /*Zerar todos os padroes, as margens*/
+
+.header{
+    height: 100px;
+    background-color: black;
+    border: aquamarine 3px solid;
+    
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    /*background-color: red;*/
+    margin: auto;
+    }
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} /*especificação, que quero mudar apenas nessa parte a questão da margem, display flex e outros*/
+
+.navbar{
+    display: flex; /*por padrão já esta flex row*/
+    list-style: none;/*tirar as bolinhas da lista*/
+    width: 50%;
+    justify-content: space-between; /*espaçamento entre os elementos*/
+    
+}
+
+.container h1{
+    color: aquamarine;
+}
+
+.navbar li{
+    font-weight: lighter;
+    color: goldenrod;
+}
+
+.navbar .active{
+    font-weight: bolder;
+}
+
+.navbar li a {
+    text-decoration:none; /*tirar estilização padrao de link*/
+    color: goldenrod;
+}
