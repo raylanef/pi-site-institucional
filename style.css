@@ -1,4 +1,4 @@
-*{
+*{ /*todos*/
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0;
@@ -7,7 +7,7 @@
 .header{
     height: 100px;
     background-color: black;
-    border: aquamarine 3px solid;
+    border: #3289cd 3px solid;
     
 }
 
@@ -26,14 +26,14 @@
 
 .navbar{
     display: flex; /*por padrão já esta flex row*/
-    list-style: none;/*tirar as bolinhas da lista*/
+    list-style: none;/*tirar as bolinhas/marcador da lista*/
     width: 50%;
     justify-content: space-between; /*espaçamento entre os elementos*/
     
 }
 
 .container h1{
-    color: aquamarine;
+    color: #3289cd;
 }
 
 .navbar li{
@@ -49,3 +49,181 @@
     text-decoration:none; /*tirar estilização padrao de link*/
     color: goldenrod;
 }
+
+.banner{
+    height: 500px;
+    background-color: red;
+    background-image: url(https://miro.medium.com/max/5736/1*DjT0qlKH_h8nLF6dltbo2g.png);
+    background-size: cover; /*p ajustar a imagem*/
+    background-repeat: no-repeat;/*p repetir a imagem, y é vertical, x é horizontal, no-reapt - p nao repetir a img*/
+    display: flex;
+    justify-content: center; /*p centralizar*/
+    align-items: center;
+    
+}
+
+.message{
+    width: 10%; /*p ajustar o tamanho da tag p, texto no meio do banner*/ 
+    color: white;
+    font-size: 30px;
+    margin-right: 250px;
+  
+}
+
+.message span{
+    font-weight: bolder;
+}
+
+.proposito{
+    height: 450px;
+    background-color: #E5E5E5;
+
+}
+.proposito .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proposito .container h2{
+    background-color: white;
+    color: #E6005A;
+    padding: 25px;
+    border-radius: 10px; /*curvatura, arredondar as bordas*/
+}
+
+.proposito .container .mvv div img{
+    height: 100px;
+    width: 100px;
+}
+
+.proposito .container .mvv{
+    margin-top: 50px;
+    width: 100%;/*p dar espaçamento entre os elemnentos,fixando a div*/
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.proposito .container .mvv div{
+    width: 25vw; /*p fixar tamanho*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container .mvv div h3{
+    color: #E6005A;
+    font-weight: bolder;
+    margin: 25px 0; /*le-se na 25px na vertical, 0 na horizontal*/
+}
+
+
+.footer{
+    background-color:#3289CD;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+  
+}
+
+.banner .formLogin{
+    height: 350px;
+    width: 50%;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /*bota espaçamento em todos os lados do elemento o between cola nas extremidades*/
+}
+
+.banner .formLogin h2{
+    color: #E6005A;
+
+}
+
+.banner .formLogin div{
+    display: flex;
+    flex-direction: column; /*p dar aquele br maroto*/
+}
+
+.banner .formLogin div span{
+    color: #E6005A;
+}
+
+.banner .formLogin div input{
+    border: 2px solid #E6005A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner .formLogin button{
+    background-color: #E6005A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+.banner .formCadastro{
+    height: 400px;
+    width: 70%;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /*bota espaçamento em todos os lados do elemento o between cola nas extremidades*/
+}
+
+
+.banner .formCadastro h2{
+    color: #E6005A;
+
+}
+
+.banner .formCadastro div{
+    display: flex;
+    flex-direction: column; /*p dar aquele br maroto*/
+    width: 100%;
+    margin-left: 70px;
+
+}
+
+
+.banner .forCadastro .divCep .divEndereco{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.banner .formCadastro div span{
+    color: #E6005A;
+}
+
+.banner .formCadastro div input{
+    border: 2px solid #E6005A;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.banner .formCadastro button{
+    background-color: #E6005A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;    
+    width: 30%;
+}
+
+
+
+
